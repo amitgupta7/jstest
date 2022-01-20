@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <title>Example</title>
+</head>
+<body>
+  <input type="text" id="myInput">
+  <button value="1">One</button>
+<br>
+  div1: <div id="demo"></div>
+  div2: <div id="demo1"></div>
+  div3: <div id="demo2"></div>
+
+<script>
+function printHtml(value){
+	return $('<div/>').text(value).html();
+}
+
+
+$(document).ready(function() {
+    $('button').click(function() {
+        var inpt = $("#myInput").val()
+        var textNode = document.createTextNode(inpt)
+        $("#demo").text(inpt)
+        $("#demo1").prepend(printHtml(inpt))
+        $("#demo2").html(textNode)
+    });
+});
+</script>
+</body>
+</html>
