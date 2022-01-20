@@ -9,9 +9,10 @@
   <input type="text" id="myInput">
   <button value="1">One</button>
 <br>
-  div1: <div id="demo"></div>
-  div2: <div id="demo1"></div>
-  div3: <div id="demo2"></div>
+  div0: <div id="demo"></div>
+  div1: <div id="demo1"></div>
+  div2: <div id="demo2"></div>
+  div3: <div id="demo3"></div>
 
 <script>
 function printHtml(value){
@@ -26,6 +27,7 @@ $(document).ready(function() {
         $("#demo").text(inpt)
         $("#demo1").prepend(printHtml(inpt))
         $("#demo2").html(textNode)
+        $("#demo3").prepend(inpt)
     });
 });
 </script>
