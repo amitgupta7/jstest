@@ -13,5 +13,5 @@ import HTML
 from HTML::Attribute attr, string libName
 where attr.getName() = "src" and
 attr.getElement() instanceof ScriptElement and 
-libName = attr.getValue().regexpCapture(".*(?:^|/)(.*)", 1) 
-select attr, libName+" defined in script tag and may be unsafe"
+libName = attr.getValue().regexpCapture("http.://.*(?:^|/)(.*)", 1) 
+select attr, libName+" defined in script tag from http(s) url and may be unsafe. Please use npm to manage js dependencies"
