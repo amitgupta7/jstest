@@ -25,7 +25,7 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.4.0
         with:
-          target: 'http://127.0.0.1:8000/jstest/' # Target url for the scan
+          target: 'http://127.0.0.1:8000/' # Target url for the scan
       - name: Create sarif file from zaproxy results
         uses: SvanBoxel/zaproxy-to-ghas@main
       - name: Upload SARIF file
