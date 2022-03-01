@@ -1,6 +1,6 @@
 # https://codeql.github.com/docs/codeql-cli/about-codeql-packs/
 
-name: amitgupta7/jstest
+name: amitgupta7/jstest/ql/javascript
 version: 0.0.1
 dependencies:
     codeql/javascript-queries: "*"
