@@ -30,7 +30,7 @@ jobs:
       with:
         paths-ignore: 'import/*.js'
         languages: ${{ matrix.language }}
-        packs: amitgupta7/jstest-pack
+        packs: amitgupta7/jstest-pack@v1
         #queries: +security-and-quality,
          #amitgupta7/jstest/ql/javascript/scriptImport.ql@main
         debug: true
