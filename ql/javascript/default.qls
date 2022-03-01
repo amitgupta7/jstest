@@ -1,5 +1,0 @@
-# https://codeql.github.com/docs/codeql-cli/creating-codeql-query-suites/
-
-- import: codeql-suites/javascript-security-and-quality.qls # run the security and quality suite
-  from: codeql/javascript-queries     
-- query: scriptImport.ql              # And run this custom query
